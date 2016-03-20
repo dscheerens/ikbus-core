@@ -11,6 +11,7 @@
 		Module that provides the core I/K-bus abstractions for packets, messages, parsers, module descriptors and vehicle network profiles.
 		Also provides the base I/O interfaces and classes for I/K-bus communication links.
 	</description>
+	<url>https://github.com/dscheerens/ikbus-core</url>
 	
 	<build>
 		<plugins>
