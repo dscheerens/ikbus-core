@@ -7,13 +7,13 @@ Furthermore a set of I/O interfaces and classes are provided for setting up a co
 
 By itself this package only offers the foundation for building applications that process I/K-bus packets.
 To actually decode/parse packets and to obtain their semantics you need an additional package.
-Soon I will publish an `ikbus-bmw` package that provides an I/K-bus network profile for BMW models [E38](https://en.wikipedia.org/wiki/BMW_7_Series_%28E38%29), [E39](https://en.wikipedia.org/wiki/BMW_5_Series_%28E39%29), [E46](https://en.wikipedia.org/wiki/BMW_3_Series_%28E46%29), and [E53](https://en.wikipedia.org/wiki/BMW_X5_%28E53%29).
+Soon I will publish an `ikbus-bmw` package that provides an I/K-bus network profile for BMW [E38](https://en.wikipedia.org/wiki/BMW_7_Series_%28E38%29), [E39](https://en.wikipedia.org/wiki/BMW_5_Series_%28E39%29), [E46](https://en.wikipedia.org/wiki/BMW_3_Series_%28E46%29), and [E53](https://en.wikipedia.org/wiki/BMW_X5_%28E53%29) models.
 As soon as this package is published I will add a link to that repository.
 
 In addition you may want your application to communicate with the I/K-bus network of your vehicle.
 For this you will need a physical interface like [Rolf Resler's IBUS interface](http://www.reslers.de/IBUS/).
 This IBUS interface adds a serial/COM port to your computer, which can be used to read and write data to/from the I/K-bus network of your vehicle.
-The `ikbus-jssc-connector` package (published soon) provides a `SerialPortIKBusConnection` class that can be used to read and write I/K-bus packets from a serial port.
+The [`ikbus-jssc-connector`](https://github.com/dscheerens/ikbus-jssc-connector) package provides a `SerialPortIKBusConnection` class that can be used to read and write I/K-bus packets from a serial port.
 
 Usage
 -----
@@ -45,6 +45,13 @@ The most important classes and interfaces of the `ikbus-core` package are listed
 | [`CompoundIKBusMessageParser`](https://dscheerens.github.io/docs/ikbus-core/latest/javadoc/index.html?net/novazero/lib/ikbus/CompoundIKBusMessageParser.html) | A [`IKBusMessageParser`](https://dscheerens.github.io/docs/ikbus-core/latest/javadoc/index.html?net/novazero/lib/ikbus/IKBusMessageParser.html) implementation that iterates over a list of delegate parsers to parse I/K-bus messages. |
 | [`IKBusProfile`](https://dscheerens.github.io/docs/ikbus-core/latest/javadoc/index.html?net/novazero/lib/ikbus/IKBusProfile.html) | Interface for classes that define an I/K-bus network profile, by providing an [`IKBusMessageParser`](https://dscheerens.github.io/docs/ikbus-core/latest/javadoc/index.html?net/novazero/lib/ikbus/IKBusMessageParser.html) and an [`IKBusModuleDescriptionProvider`](https://dscheerens.github.io/docs/ikbus-core/latest/javadoc/index.html?net/novazero/lib/ikbus/IKBusModuleDescriptionProvider.html). |
 | [`IKBusConnection`](https://dscheerens.github.io/docs/ikbus-core/latest/javadoc/index.html?net/novazero/lib/ikbus/io/IKBusConnection.html) | Interface to represent I/K-bus connections. Provides an [`IKBusPacketReader`](https://dscheerens.github.io/docs/ikbus-core/latest/javadoc/index.html?net/novazero/lib/ikbus/io/IKBusPacketReader.html) and an an [`IKBusPacketWriter`](https://dscheerens.github.io/docs/ikbus-core/latest/javadoc/index.html?net/novazero/lib/ikbus/io/IKBusPacketWriter.html). |
+
+
+Related packages
+----------------
+
+* [`ikbus-jssc-connector`](https://github.com/dscheerens/ikbus-jssc-connector) - I/K-bus communication link for serial ports.
+* `ikbus-bmw` - Provides an I/K-bus network profile for several BMW car models. _(coming soon)_
 
 Links
 -----
