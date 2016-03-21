@@ -13,7 +13,7 @@ As soon as this package is published I will add a link to that repository.
 In addition you may want your application to communicate with the I/K-bus network of your vehicle.
 For this you will need a physical interface like [Rolf Resler's IBUS interface](http://www.reslers.de/IBUS/).
 This IBUS interface adds a serial/COM port to your computer, which can be used to read and write data to/from the I/K-bus network of your vehicle.
-The [`ikbus-jssc-connector`](https://github.com/dscheerens/ikbus-jssc-connector) package provides a `SerialPortIKBusConnection` class that can be used to read and write I/K-bus packets from a serial port.
+The [`ikbus-jssc-connector`](https://github.com/dscheerens/ikbus-jssc-connector) package provides a [`SerialPortIKBusConnection`](https://dscheerens.github.io/docs/ikbus-jssc-connector/latest/javadoc/index.html?net/novazero/lib/ikbus/io/SerialPortIKBusConnection.html) class that can be used to read and write I/K-bus packets from a serial port.
 
 Usage
 -----
