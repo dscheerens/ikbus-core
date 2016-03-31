@@ -13,6 +13,25 @@
 	</description>
 	<url>https://github.com/dscheerens/ikbus-core</url>
 	
+	<licenses>
+		<license>
+			<name>MIT</name>
+			<url>https://opensource.org/licenses/MIT</url>
+		</license>
+	</licenses>
+	
+	<developers>
+		<developer>
+			<name>Daan Scheerens</name>
+			<email>daan.scheerens@gmail.com</email>
+		</developer>
+	</developers>
+	
+	<scm>
+		<connection>scm:git:https://github.com/dscheerens/ikbus-core.git</connection>
+		<url>https://github.com/dscheerens/ikbus-core</url>
+	</scm>
+	
 	<build>
 		<plugins>
 			<plugin>
